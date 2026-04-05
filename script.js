@@ -82,7 +82,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.skill-card, .project-block, .contact-card, .timeline-item').forEach(el => {
+document.querySelectorAll('.skill-card, .project-block, .contact-card, .timeline-item, .strength-card').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(16px)';
   observer.observe(el);

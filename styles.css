@@ -547,6 +547,47 @@ section {
   border-radius: 2px;
 }
 
+/* ── KEY STRENGTHS ── */
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.strength-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.strength-card:hover {
+  border-color: var(--green);
+  transform: translateY(-3px);
+}
+
+.strength-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.strength-title {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.strength-desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 /* ── CONTACT ── */
 .contact-grid {
   display: grid;
